@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>BA.SE</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="Stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <!--Mobile first. Logo centrado, menu debajo-->
+      
+        <div class="logo">
+            <img src="#" alt="Logo compañía" />
+            <!--Ver si es posible hacer un link (tag 'a') que haga referencia y traiga la imagen de IG-->
+        </div>
+
+        <div class="menuGeneral">
+            <input id="menu1" class="toggle" type="checkbox"/>
+            <label for="menu1" class="lbl-toggle" tabindex="0">Menu1</label>
+            <div class="content">
+                <div class="content-inner">
+                    <p>
+                        Texto menu 1.
+                    </p>
+                </div>
+            </div>
+            <input id="menu2" class="toggle" type="checkbox"/>
+            <label for="menu2" class="lbl-toggle" tabindex="0">Menu2</label>
+            <div class="content">
+                <div class="content-inner">
+                    <p>
+                        Texto menu 2.
+                    </p>
+                </div>
+            </div>
+            <input id="menu3" class="toggle" type="checkbox"/>
+            <label for="menu3" class="lbl-toggle" tabindex="0">Menu3</label>
+            <div class="content">
+                <div class="content-inner">
+                    <p>
+                        Texto menu 3.
+                    </p>
+                </div>
+            </div>
+            <input id="menu4" class="toggle" type="checkbox"/>
+            <label for="menu4" class="lbl-toggle" tabindex="0">Menu4</label>
+            <div class="content">
+                <div class="content-inner">
+                    <p>
+                        Texto menu 4.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>let myLabels = document.querySelectorAll('.lbl-toggle');
+
+            Array.from(myLabels).forEach(label => {
+                label.addEventListener('keydown', e => {
+                // 32 === spacebar
+                // 13 === enter
+                    if (e.which === 32 || e.which === 13) {
+                        e.preventDefault();
+                        label.click();
+                    };
+                });
+            });
+        </script>    
+    
+</body>
+</html>
