@@ -1,18 +1,32 @@
 *{
 	margin: 0;
-	paddin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
-/* ver de cambiar tamaño de logo con media queries*/
-
-div.logo {
-	margin: 0 auto;
-	width: 30%;
-	margin-bottom: 5vh;
+img.logo {
+	display: block;
+	margin: 15px auto 10px;
+	width: 90px;
+	height: 90px;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 50%;
+	position: relative;
+}
+
+h3.ig{
+	font-family: 'Karla',Helvetica,sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 10px;
+	color: rgb(187, 187, 187);
+}
+
+h3.ig a.igLink{
+	text-decoration: none;
+	color: inherit;
 }
 
 div.menuGeneral{
@@ -27,6 +41,7 @@ input[type='checkbox']{
 /* label */
 
 .lbl-toggle {
+	margin-top: 10px;
   display: block;
 
   font-weight: bold;
@@ -42,7 +57,6 @@ input[type='checkbox']{
 
   cursor: pointer;
 
-  border-radius: 7px;
   transition: all 0.25s ease-out;
 }
 
@@ -54,7 +68,7 @@ input[type='checkbox']{
   border-width: 1px;
 }
 
-/* Triángulo*/
+/* Triï¿½ngulo*/
 
 .lbl-toggle::before {
   content: ' ';
@@ -71,7 +85,7 @@ input[type='checkbox']{
   transition: transform .2s ease-out;
 }
 
-/* rotar triángulo */
+/* rotar triï¿½ngulo */
 
 .toggle:checked + .lbl-toggle::before {
   transform: rotate(90deg) translateX(-3px);
@@ -88,8 +102,6 @@ input[type='checkbox']{
   background: rgba(64, 64, 64, .2);
   border-bottom: 1px solid rgba(255, 140, 26, .45);
 
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
   padding: .5rem 1rem;
 }
 
@@ -108,3 +120,8 @@ input[type='checkbox']{
   max-height: 250px;
 }
 
+/*AGREGAR
+
+@media (min-width: 992px) {
+
+}*/
