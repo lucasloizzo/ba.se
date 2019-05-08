@@ -1,4 +1,4 @@
-*{
+﻿*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -41,7 +41,7 @@ input[type='checkbox']{
 /* label */
 
 .lbl-toggle {
-	margin-top: 10px;
+  margin-top: 10px;
   display: block;
 
   font-weight: bold;
@@ -120,8 +120,22 @@ input[type='checkbox']{
   max-height: 250px;
 }
 
-/*AGREGAR
+/* Pantalla Desktop */
 
 @media (min-width: 992px) {
+  div.menuGeneral{
+  	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-wrap: flex;
+  }
 
-}*/
+  div.menuGeneral div.row{
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+  }
+  
+}
